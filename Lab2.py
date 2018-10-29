@@ -25,7 +25,7 @@ ec2 = boto3.resource('ec2', region_name="ap-southeast-1")
 
 instances = ec2.create_instances(
     NetworkInterfaces=[{'SubnetId': "subnet-e5898182", 'DeviceIndex': 0, 'Groups': ["sg-04261b52db85032f2"]}],
-	ImageId='ami-01d8a676ed951f5d1',
+	ImageId='ami-08952f65c0e841542',
 	MinCount=1,
 	MaxCount=1,
 	KeyName="key_pair_for_lab",
